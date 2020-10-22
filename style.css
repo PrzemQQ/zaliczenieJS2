@@ -1,0 +1,149 @@
+body{
+
+  color:white;
+  text-transform: uppercase;
+  text-align:center;
+  justify-content:justify;
+  flex-wrap:wrap;
+  flex-direction:column;
+
+  background-image:linear-gradient(to right, #bc0707, #f9f513);
+
+}
+
+.preloader {
+  position:fixed;
+  margin:0;
+  padding:0;
+  width:101%;
+  height:100%;
+    transition-duration:1s;
+  /*  background:#000; */
+
+
+}
+  .preloader:before {
+    content:" ";
+    position:absolute;
+    left:0;
+    width:50%;
+    height:100%;
+    transition-duration:1s;
+    background:#000;
+
+  }
+  .preloader.complete:before {
+    left:-56%;
+  }
+  .preloader:after {
+    content:" ";
+    position:absolute;
+    right:0;
+    width:50%;
+    height:100%;
+      transition-duration:1s;
+    background:#000;
+  }
+  .preloader.complete:after {
+    right:-50%;
+  }
+  .xd {
+    display:none;
+    justify-content:center;
+    font-size:10vw;
+    color:black;
+
+  }
+  h1 {
+  font-family: 'Francois One', sans-serif;
+  text-shadow: 2px 5px black;
+font-size:7vw;
+opacity: 0.7;
+letter-spacing: 10px;
+}
+h2 {
+  font-family: 'Caveat', cursive;
+  color:black;
+  font-size:4vw;
+  text-transform:inherit;
+  text-shadow: 2px 3px white;
+
+}
+h3 {
+  color:white;
+  font-size:2vw;
+  text-transform:inherit;
+
+}
+.calosc {
+  display:none;
+
+}
+#zegarek {
+  text-align:center;
+  font-size:3vw;
+  opacity:0.3;
+  font-family: 'Srisakdi', cursive;
+
+}
+button {
+  position: relative;
+  background-color: black;
+  border-radius: 40px 40px;
+
+  font-size: 2vw;
+  color: #FFFFFF;
+  padding: 20px;
+  width: auto;
+  height:auto;
+  text-align: center;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  text-decoration: none;
+
+  cursor: pointer;
+  margin-bottom:5%;
+}
+button:hover {
+  transition: 1s;
+  transform:scale(0.6);
+}
+button:focus
+{
+  transition:0.5s;
+  transform:rotate(20deg);
+}
+h4 {
+  display:none;
+
+}
+#lay1 {
+  display:none;
+
+
+}
+#lay2 {
+  display:none;
+  animation-duration: 5s;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-name: kwiaty;
+  animation-iteration-count: infinite;
+
+  animation-name: kwiaty;
+
+}
+@keyframes kwiaty {
+  25% { transform:rotate(20deg);}
+  50% { transform:scale(0.5););}
+  75% { transform:rotate(-20deg);}
+  100% { transform:scale(0.5);}
+
+}
+h5 {
+  display:none;
+  font-size:5vw;
+  text-shadow: 2px 5px black;
+  font-family: 'Pacifico', cursive;
+
+
+}
